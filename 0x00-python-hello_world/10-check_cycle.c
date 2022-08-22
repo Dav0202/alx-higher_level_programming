@@ -6,7 +6,6 @@
  * Description - check for loops in LL
  * Return: 1 if cycled, 0 if not
  */
-
 int check_cycle(listint_t *list)
 {
 	listint_t *slow, *fast;
