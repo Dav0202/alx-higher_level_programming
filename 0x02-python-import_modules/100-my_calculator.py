@@ -6,7 +6,7 @@ if __name__ == "__main__":
     num_args = len(sys.argv)
     if num_args != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        exit(1)
+        sys.exit(1)
     a = int(sys.argv[1])
     op = sys.argv[2]
     b = int(sys.argv[3])
@@ -21,4 +21,4 @@ if __name__ == "__main__":
         print("{} {} {} = {}".format(a, op, b, div(a, b)))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
-        exit(1)
+        sys.exit(1)
