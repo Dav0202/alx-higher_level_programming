@@ -8,5 +8,7 @@ class Square:
     """
 Implementation
     """
+    
+    
     def __init__(self, size):
-        self.__size = 
+        self.__size = size
