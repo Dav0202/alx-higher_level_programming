@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 """
 Module defining class square
 """
