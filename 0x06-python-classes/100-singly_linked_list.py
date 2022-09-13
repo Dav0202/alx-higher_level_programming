@@ -55,7 +55,8 @@ class SinglyLinkedList:
                 newNode = Node(value, current)
                 previous.next_node = newNode
 
-    def __repr__(self):
+    def __str__(self):
+        """Define the print() representation of a SinglyLinkedList."""
         node = self.__head
         txt = ''
         while 1:
