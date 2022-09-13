@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-
-
 """
 Module defining class square
 """
+
+
 class Square:
     """ 
      class square randomly generates integer to 
