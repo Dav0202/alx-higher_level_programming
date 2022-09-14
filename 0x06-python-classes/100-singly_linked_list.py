@@ -6,6 +6,7 @@ This module defines a Singly linked list
 
 class Node:
      """Represent a node in a singly-linked list."""
+
     def __init__(self, data, next_node=None):
         """Defines a node for a singly linked list
         """
@@ -35,6 +36,7 @@ class Node:
 
 
 class SinglyLinkedList:
+     """Represent a singly-linked list."""
     def __init__(self):
         """Defines the singly linked list
         """
@@ -57,7 +59,8 @@ class SinglyLinkedList:
                 newNode = Node(value, current)
                 previous.next_node = newNode
 
-    def __repr__(self):
+    def __str__(self):
+     """Define the print() representation of a SinglyLinkedList."""
         node = self.__head
         txt = ''
         while 1:
