@@ -3,5 +3,7 @@
 
 
 class Square:
-    """ class square randomly generates integer to denote one side of a square and store it in the class"""
+    """ class square randomly generates
+    integer to denote one side of a 
+    square and store it in the class"""
     pass
