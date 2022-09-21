@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Area and Perimeter"""
+
+
 class Rectangle:
     """ Class that creates an object Rectangle """
 
