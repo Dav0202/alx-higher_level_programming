@@ -19,18 +19,28 @@ def matrix_divided(matrix, div):
         list: matrix divided by div
     """
 
-    if type(div) not in [int, float]:
-        raise TypeError("div must be a number")
+    if not matrix or \
+       not isinstance(matrix, list) or \
+       not all(isinstance(i, list) for i in matrix) or \
+       not all(len(j) for j in matrix) or \
+       not all([all(isinstance(k, (int, float)) for k in m) for m in matrix]):
+
+        msg = "matrix must be a matrix (list of lists) of integers/floats"
+        raise TypeError(msg)
+
+    check = [len(r) for r in matrix]
+
+    if len(set(check)) != 1:
+        msg = "Each row of the matrix must have the same size"
+        raise TypeError(msg)
+
+    if not isinstance(div, (int, float)) or div != div:
+        msg = "div must be a number"
+        raise TypeError(msg)
+
     if div == 0:
-        raise ZeroDivisionError(
-            "Each row of the matrix must have the same size")
+        msg = "division by zero"
+        raise ZeroDivisionError(msg)
 
-    if not all(len(row) == len(matrix[0]) for row in matrix):
-        raise TypeError("Each row of the matrix must have the same size")
-    if not all(type(num) in [int, float] for row in matrix for num in row):
-        raise TypeError("matrix must be a matrix (list of lists)"
-                        " of integers/floats")
-
-    new_matrix = [["{:.2f}".format(num / div) for num in row]
-                  for row in matrix]
-    return new_matrix
+    new_m = [[round(j / div, 2) for j in i] for i in matrix]
+    return (new_m)
