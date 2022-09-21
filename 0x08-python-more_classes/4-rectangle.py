@@ -60,9 +60,10 @@ class Rectangle:
             for j in range(self.height):
                 str_ += "{}".format('#'*self.__width)
                 if j != (self.height - 1):
+       
                     str_ += "\n"
         return str_
 
-     def __repr__(self):
+    def __repr__(self):
         """ Method that returns Object Representation as string """
         return "Rectangle({:d}, {:d})".format(self.width, self.height)
