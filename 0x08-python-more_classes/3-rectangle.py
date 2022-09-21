@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+"""Area and Perimeter
+Task:
+    print() and str() should print the rectangle
+    with the character #
+"""
+
+
 class Rectangle:
     """ Class that creates an object Rectangle """
     def __init__(self, width=0, height=0):
