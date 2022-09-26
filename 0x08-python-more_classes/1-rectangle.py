@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Real definition of a rectangle"""
+
+
 class Rectangle:
     """ Class that creates a Rectangle Object """
     def __init__(self, width=0, height=0):
