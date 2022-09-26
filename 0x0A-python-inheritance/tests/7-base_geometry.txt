@@ -100,3 +100,88 @@ No arguments
     Traceback (most recent call last):
     ...
     TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+
+WITH VALUE ARGUMENT
+
+Positive Integer
+
+    >>> bg.integer_validator("Test", 2)
+
+Negative Integer
+    >>> bg.integer_validator("Test", -2)
+    Traceback (most recent call last):
+    ...
+    ValueError: Test must be greater than 0
+
+With Zero as Value
+
+    >>> bg.integer_validator("Test", 0)
+    Traceback (most recent call last):
+    ...
+    ValueError: Test must be greater than 0
+
+Float
+
+    >>> bg.integer_validator("Test", 1.0)
+    Traceback (most recent call last):
+    ...
+    TypeError: Test must be an integer
+
+Negative Float
+
+    >>> bg.integer_validator("Test", -1.0)
+    Traceback (most recent call last):
+    ...
+    TypeError: Test must be an integer
+
+Boolean
+
+    >>> bg.integer_validator("Test", True)
+    Traceback (most recent call last):
+    ...
+    TypeError: Test must be an integer
+
+List
+
+    >>> bg.integer_validator("Test", [1])
+    Traceback (most recent call last):
+    ...
+    TypeError: Test must be an integer
+
+
+Tuple
+
+    >>> bg.integer_validator("Test", (1, ))
+    Traceback (most recent call last):
+    ...
+    TypeError: Test must be an integer
+
+Set
+
+    >>> bg.integer_validator("Test", {1})
+    Traceback (most recent call last):
+    ...
+    TypeError: Test must be an integer
+
+Dict
+
+    >>> bg.integer_validator("Test", {1: 1})
+    Traceback (most recent call last):
+    ...
+    TypeError: Test must be an integer
+
+None
+
+    >>> bg.integer_validator("Test", None)
+    Traceback (most recent call last):
+    ...
+    TypeError: Test must be an integer
+
+String
+
+
+    >>> bg.integer_validator("Test", "1")
+    Traceback (most recent call last):
+    ...
+    TypeError: Test must be an integer
