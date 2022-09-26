@@ -13,7 +13,7 @@ class BaseGeometry:
         """ Validates Value
         name is assumed to be a string"""
 
-        if type(value) != int:
+        if type(value) is not int:
             msg = "{:s} must be an integer".format(name)
             raise TypeError(msg)
         if value <= 0:
