@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Author: David
+"""
 
 
 def add_attribute(obj, name, value):
