@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ author David """
 
+
 def pascal_triangle(n):
     """ Function for creating a pascal
     triangle as a list of lists
