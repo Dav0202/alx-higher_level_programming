@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Author:  David """"
+""" Author:  David """
 
 
 def class_to_json(obj):
