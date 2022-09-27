@@ -1,12 +1,11 @@
 #!/usr/bin/python3
-""" author David"""
+""" author David """
 
 def pascal_triangle(n):
     """ Function for creating a pascal
     triangle as a list of lists
     n: number of rows
-    returns empty list if n <= 0
-    """
+    returns empty list if n <= 0 """
     if n <= 0:
         return ([])
 
