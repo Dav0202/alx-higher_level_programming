@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Author:  David """"
 
+
 def class_to_json(obj):
     """ function that returns the dictionary
     description with simple data
