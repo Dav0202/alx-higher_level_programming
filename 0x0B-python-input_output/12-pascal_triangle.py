@@ -7,7 +7,6 @@ def pascal_triangle(n):
     triangle as a list of lists """
     if n <= 0:
         return ([])
-
     pascal = [[1]]
     for i in range(1, n):
         row = [1]
