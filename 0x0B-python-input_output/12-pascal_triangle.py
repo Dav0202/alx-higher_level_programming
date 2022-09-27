@@ -17,7 +17,5 @@ def pascal_triangle(n):
         for j in range(len(prev)):
                 new = prev[j] + prev[j + 1] if j != len(prev) - 1 else 1
                 row.append(new)
-
         pascal.append(row)
-
     return pascal
