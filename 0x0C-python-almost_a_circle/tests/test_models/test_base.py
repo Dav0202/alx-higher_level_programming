@@ -546,3 +546,6 @@ class Test_load_from_file_csv(unittest.TestCase):
         st2 = str(sl1[1])
         self.assertEqual(str(s1), st1)
         self.assertEqual(str(s2), st2)
+
+if __name__ == '__main__':
+    unittest.main()
