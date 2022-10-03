@@ -530,3 +530,6 @@ class Test_to_dictionary(unittest.TestCase):
         self.assertEqual(dic1["x"], d1["x"])
         self.assertEqual(dic1["y"], d1["y"])
         self.assertEqual(dic1["id"], d1["id"])
+        
+if __name__ == '__main__':
+    unittest.main()
