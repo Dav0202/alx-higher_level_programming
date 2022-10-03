@@ -55,7 +55,7 @@ class Test_id(unittest.TestCase):
 
 
 class Test_instance(unittest.TestCase):
-    """ Clas for unittest of  instance """
+    """ Class for unittest of  instance """
 
     def test_base_self(self):
         """ Check if is instance """
@@ -200,39 +200,6 @@ class Test_create(unittest.TestCase):
         Base._Base__nb_objects = 0
 
     def test_Rectangle1(self):
-        """ Test with different Rectangle instances """
-        r1 = Rectangle(3, 5)
-        d1 = r1.to_dictionary()
-        r2 = Rectangle.create(**d1)
-        st1 = str(r1)
-        st2 = str(r2)
-        self.assertEqual(st1, st2)
-        self.assertFalse(r1 is r2)
-        self.assertFalse(r1 == r2)
-
-    def test_Rectangle2(self):
-        """ Test with different Rectangle instances """
-        r1 = Rectangle(3, 5, 8)
-        d1 = r1.to_dictionary()
-        r2 = Rectangle.create(**d1)
-        st1 = str(r1)
-        st2 = str(r2)
-        self.assertEqual(st1, st2)
-        self.assertFalse(r1 is r2)
-        self.assertFalse(r1 == r2)
-
-    def test_Rectangle3(self):
-        """ Test with different Rectangle instances """
-        r1 = Rectangle(3, 5, 8, 6)
-        d1 = r1.to_dictionary()
-        r2 = Rectangle.create(**d1)
-        st1 = str(r1)
-        st2 = str(r2)
-        self.assertEqual(st1, st2)
-        self.assertFalse(r1 is r2)
-        self.assertFalse(r1 == r2)
-
-    def test_Rectangle4(self):
         """ Test with different Rectangle instances """
         r1 = Rectangle(3, 5, 8, 6, 85)
         d1 = r1.to_dictionary()
@@ -546,6 +513,3 @@ class Test_load_from_file_csv(unittest.TestCase):
         st2 = str(sl1[1])
         self.assertEqual(str(s1), st1)
         self.assertEqual(str(s2), st2)
-
-if __name__ == '__main__':
-    unittest.main()
