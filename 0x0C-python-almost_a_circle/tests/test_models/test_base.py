@@ -301,7 +301,6 @@ class Test_save_to_file(unittest.TestCase):
         with open(name, "r") as myfile:
             r = myfile.read()
             self.assertEqual(r, '[]')
-            
 
     def test_checkNoneRec(self):
         """ Checks Contents """
