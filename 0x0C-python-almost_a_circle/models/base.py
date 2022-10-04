@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """ Base Class for Geometry Rectangle and Square """
 
 from encodings import utf_8
