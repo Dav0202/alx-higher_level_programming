@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Get all states """
+""" Filter states """
 
 from sys import argv
 import MySQLdb
@@ -14,7 +14,10 @@ if __name__ == "__main__":
                          passwd=password,
                          db=db_name)
     cur = db.cursor()
-    cur.execute("SELECT states.id, name FROM states ORDER BY states.id ASC;")
+    cur.execute("SELECT states.id, name FROM states WHERE name "
+                "COLLATE latin1_general_cs "
+                "LIKE 'N%' "
+                "ORDER BY states.id ASC;")
     rows = cur.fetchall()
     for row in rows:
         print(row)
